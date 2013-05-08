@@ -346,6 +346,9 @@ function createDialog (url)
      });
 }
 
+var handle_tabletop_data = function(data) {
+	console.log(data);
+};
 
 $(document).ready (function () {
 	// Change of drop down
@@ -355,5 +358,14 @@ $(document).ready (function () {
 	});
 
 	var m = new MapObject ('paper', '#cec5bf', '#484848');
+
+	Tabletop.init({
+		// TODO add key to Google spreadsheet
+		key: '',
+		callback: function(data) {
+			handle_tabletop_data(data);
+		},
+		simpleSheet: true
+	});
 });
 
