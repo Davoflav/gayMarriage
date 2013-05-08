@@ -82,21 +82,8 @@
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
          <script src="http://www.startribune.com/includes/raphael-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="scripts/tabletop.js" type="text/javascript" charset="utf-8"></script>
         <script src="scripts/MapObject.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript" charset="utf-8">
-		
-
-                    $(document).ready (function () {
-                // Change of drop down
-                $('#states').change (function () {
-                    var newURL = $(this).val () + '/';
-                    m.createDialog (newURL);
-                });
-
-                var m = new MapObject ('paper', '#cec5bf', '#484848');
-            });
-        </script>
-
 
 </body>
 </html>

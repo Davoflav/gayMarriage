@@ -345,3 +345,15 @@ function createDialog (url)
         }
      });
 }
+
+
+$(document).ready (function () {
+	// Change of drop down
+	$('#states').change (function () {
+		var newURL = $(this).val () + '/';
+		m.createDialog (newURL);
+	});
+
+	var m = new MapObject ('paper', '#cec5bf', '#484848');
+});
+
