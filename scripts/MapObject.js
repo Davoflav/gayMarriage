@@ -361,7 +361,7 @@ $(document).ready (function () {
 
 	Tabletop.init({
 		// TODO add key to Google spreadsheet
-		key: '',
+		key: 'https://docs.google.com/spreadsheet/pub?key=0Aha4i29EHuX3dHM1c3VDZDIxOWw2NTBsTU1pcmxfeVE&output=html',
 		callback: function(data) {
 			handle_tabletop_data(data);
 		},
